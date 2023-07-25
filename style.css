@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 0.09rem 0;
+  }
+  
+  header h1 {
+    margin: 0 1rem;
+  }
+
+  nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0 2rem;
+    padding: 0 20rem;
+  }
+  
+  nav li {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  #hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    min-height: 500px; /* Set a minimum height for the hero section */
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* You can adjust the background color and opacity as needed */
+  }
+  
+  #hero .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  #hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .cta-button {
+    background-color: #ff6b6b; /* Button background color */
+    color: #fff;
+    padding: 12px 30px; /* Adjust padding to control button size */
+    text-decoration: none;
+    border-radius: 50px; /* Make the button rounded */
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .cta-button:hover {
+    background-color: #ff8f8f; /* Button background color on hover */
+  }
+  
+  
+  #about {
+    background-color: #eee;
+    padding: 50px 0;
+    min-height: 500px;
+  }
+
+  #about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  
+  .about-content {
+    width: 40%;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .about-video {
+    width: 55%;
+    position: relative;
+    margin-top: 5rem;
+    box-shadow: rgba(6, 7, 7, 0.1);
+    border-radius: 8px;
+  }
+  
+  .about-video video {
+    width: 100%;
+    height: 90%;
+    min-height: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+  
+  #about a {
+    margin-top: 20px;
+  }
+
+  #about .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #about .cta-button {
+    padding: 20px 40px;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .about-content,
+    .about-video {
+      width: 100%;
+    }
+  }
+  
+  #services {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  #services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .service {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensure the image fits well within the circular container */
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  #contact {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    display: inline-block;
+    background-color: #ff6b6b; /* Button background color */
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px; /* Make the button rounded */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff8f8f; /* Button background color on hover */
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo p {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-contact p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+  
